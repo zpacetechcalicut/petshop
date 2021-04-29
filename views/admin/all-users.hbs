@@ -1,0 +1,31 @@
+<section>
+    <div class="container">
+<h3>Users</h3>
+        <table class="table mt-5">
+            <thead>
+                <tr>
+                    {{!-- <th scope="col">Date</th> --}}
+                    <th>Name</th>
+                    <th>Email</th>
+                    {{!-- <th>Mobile</th>
+                    <th scope="col">Amount</th>
+                    <th scope="col">Payment</th>
+                    <th>Status</th> --}}
+                </tr>
+            </thead>
+            <tbody>
+                {{#each users}}
+                <tr>
+                    {{!-- <td>{{this.date}}</td> --}}
+                    <td>{{this.Name}}</td>
+                    <td>{{this.Email}}</td>
+                    {{!-- <td>{{this.deliveryDetails.mobile}}</td>
+                    <td>{{this.totalAmount}}</td>
+                    <td>{{this.paymentMethod}}</td>
+                    <td>{{this.status}}</td> --}}
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+</section>

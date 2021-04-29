@@ -1,0 +1,23 @@
+<section>
+    <div class="container mt-5">
+        <form action="/place-order" method="post">
+            <h2>Enter delivery details</h2><br>
+            <div>
+                <label for="">Address</label>
+                <input class="form-control" type="text" id="address" name="address">
+
+                <label for="">Pincode</label>
+                <input class="form-control" type="text" id="pincode" name="pincode">
+
+                <label for="">Mobile</label>
+                <input class="form-control" type="text" id="mobile" name="mobile">
+
+                <input type="text" name="userId" id="" value="{{user._id}}" hidden>
+
+                <h5>Total Amount: Rs.{{this.total}}</h5>
+
+                <button class="float-right btn btn-success ml-3" type="submit">Checkout</button>
+            </div>
+        </form>
+    </div>
+</section>

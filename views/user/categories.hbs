@@ -1,0 +1,14 @@
+<section>
+    <div class="container">
+        <br>
+        <h1>Categories</h1>
+        <br>
+
+            <div class="list-group">
+                {{#each categories}}
+                <a href="/category-products/{{this._id}}" type="submit" name="Category" class="list-group-item list-group-item-action">{{this.Category}}</a>
+                {{/each}}
+            </div>
+
+    </div>
+</section>
